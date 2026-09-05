@@ -1,11 +1,73 @@
-node_modules/
-build/
-dist/
-coverage/
-.DS_Store
-*.log
-.env*
-!.env.example
+# -------------------------------------------------------------------
+# Environment Variables & Secrets (NEVER commit these)
+# -------------------------------------------------------------------
 .env
-.env\
-.env/
+.env.local
+.env.*.local
+*.pem
+*.key
+db
+.db
+/db
+db\
+# -------------------------------------------------------------------
+# Dependencies (Can be re-installed via package managers)
+# -------------------------------------------------------------------
+node_modules/
+bower_components/
+jspm_packages/
+.venv/
+env/
+venv/
+ENV/
+
+# -------------------------------------------------------------------
+# Build and Compiled Outputs
+# -------------------------------------------------------------------
+dist/
+build/
+out/
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyc
+*.pyo
+
+# -------------------------------------------------------------------
+# Logs and Caches
+# -------------------------------------------------------------------
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+.parcel-cache
+.eslintcache
+.pytest_cache/
+.ipynb_checkpoints
+
+# -------------------------------------------------------------------
+# OS-Specific Files
+# -------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# -------------------------------------------------------------------
+# IDE / Editor Settings
+# -------------------------------------------------------------------
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
